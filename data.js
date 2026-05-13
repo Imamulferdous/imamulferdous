@@ -145,7 +145,7 @@ const websiteData = {
         icon: "fa-cube",
         title: "Finite Element Analysis",
         description: "Advanced computational modeling using ABAQUS for simulating creep deformation and damage evolution in high-temperature materials. Specialized in implementing user-defined subroutines (UMAT/CREEP) for complex material behavior, mesh optimization, and validation against experimental results.",
-        highlights: ["ABAQUS Simulation", "Material Modeling", "UMAT/CREEP", "Mesh Convergence"]
+        highlights: 
       },
       {
         icon: "fa-brain",
