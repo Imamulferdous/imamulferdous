@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="PhD Researcher in Mechanical Engineering specializing in high-temperature creep behavior of Grade 91 steel, Small Punch Creep Testing, and machine learning applications" />
+    <meta name="author" content="Imam Ul Ferdous" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <title>Imam Ul Ferdous | PhD Researcher - Materials Science & Machine Learning</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+    
+    <style>
+      /* Enhanced professional styles */
+      
+      /* Publication items with download button */
+      .publication-item {
+        background: linear-gradient(135deg, #1a1c20 0%, #23252a 100%);
+        padding: 25px;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        border-left: 4px solid #f5a425;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      }
+      .publication-item:hover {
+        transform: translateX(5px);
+        box-shadow: 0 4px 20px rgba(245,164,37,0.2);
+      }
+      .publication-item h5 {
+        color: #fff;
+        margin-bottom: 12px;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 1.5;
+      }
+      .publication-meta {
+        color: #f5a425;
+        font-size: 14px;
+        margin-bottom: 12px;
+        font-weight: 500;
+      }
+      .publication-status {
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+      .status-published {
+        background: #28a745;
+        color: #fff;
+      }
+      .status-submitted {
+        background: #ffc107;
+        color: #000;
+      }
+      .status-review {
+        background: #17a2b8;
+        color: #fff;
+      }
+      .publication-actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 12px;
+      }
+      .publication-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 16px;
+        background: #f5a425;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 13px;
+        font-weight: 600;
+        transition: all 0.3s;
+      }
+      .publication-link:hover {
+        background: #e09315;
+        color: #fff;
+        text-decoration: none;
+        transform: translateY(-2px);
+      }
+      .download-link {
+        background: #28a745;
+      }
+      .download-link:hover {
+        background: #218838;
+      }
+      
+      /* Professional about section (no images) */
+      .about-text-section {
+        background: #1a1c20;
+        padding: 30px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        border-left: 4px solid #f5a425;
+      }
+      .about-text-section h4 {
+        color: #f5a425;
+        font-size: 22px;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+      .about-text-section p {
+        color: #ddd;
+        font-size: 15px;
+        line-height: 1.8;
+        text-align: justify;
+      }
+      .about-summary {
+        background: linear-gradient(135deg, #1a1c20 0%, #23252a 100%);
+        padding: 35px;
+        margin-bottom: 40px;
+        border-radius: 8px;
+        border: 2px solid #f5a425;
+        box-shadow: 0 4px 20px rgba(245,164,37,0.1);
+      }
+      .about-summary p {
+        color: #fff;
+        font-size: 16px;
+        line-height: 1.9;
+        margin: 0;
+        text-align: justify;
+      }
+      
+      /* Enhanced expertise cards */
+      .expertise-card {
+        background: linear-gradient(135deg, #1a1c20 0%, #23252a 100%);
+        padding: 35px 30px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        border-top: 4px solid #f5a425;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        height: 100%;
+      }
+      .expertise-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 30px rgba(245,164,37,0.3);
+      }
+      .expertise-icon {
+        font-size: 48px;
+        color: #f5a425;
+        margin-bottom: 20px;
+      }
+      .expertise-card h4 {
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 15px;
+        font-weight: 700;
+      }
+      .expertise-card p {
+        color: #ccc;
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 15px;
+      }
+      .expertise-highlights {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 15px;
+      }
+      .highlight-tag {
+        background: #f5a425;
+        color: #000;
+        padding: 5px 12px;
+        border-radius: 15px;
+        font-size: 11px;
+        font-weight: 600;
+      }
+      
+      /* Skills section - single column */
+      .skill-category-full {
+        background: linear-gradient(135deg, #1a1c20 0%, #23252a 100%);
+        padding: 30px;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        border-left: 4px solid #f5a425;
+      }
+      .skill-category-full h5 {
+        color: #f5a425;
+        font-size: 18px;
+        margin-bottom: 15px;
+        font-weight: 700;
+      }
+      .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .skill-tag {
+        background: #2a2c30;
+        color: #fff;
+        padding: 10px 18px;
+        border-radius: 25px;
+        font-size: 14px;
+        font-weight: 500;
+        transition: all 0.3s;
+      }
+      .skill-tag:hover {
+        background: #f5a425;
+        color: #000;
+        transform: translateY(-2px);
+      }
+      
+      /* Timeline items */
+      .timeline-item {
+        background: linear-gradient(135deg, #1a1c20 0%, #23252a 100%);
+        padding: 28px;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        position: relative;
+        border-left: 4px solid #f5a425;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      }
+      .timeline-item h4 {
+        color: #f5a425;
+        font-size: 19px;
+        margin-bottom: 8px;
+        font-weight: 700;
+      }
+      .timeline-item h5 {
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 12px;
+        font-weight: 600;
+      }
+      .timeline-period {
+        color: #999;
+        font-size: 13px;
+        margin-bottom: 12px;
+        font-weight: 500;
+      }
+      .timeline-item p, .timeline-item li {
+        color: #ddd;
+        font-size: 14px;
+        line-height: 1.7;
+      }
+      .timeline-item ul {
+        margin-top: 12px;
+        padding-left: 20px;
+      }
+      
+      /* Award items */
+      .award-item {
+        background: linear-gradient(135deg, #1a1c20 0%, #23252a 100%);
+        padding: 25px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        border-left: 4px solid #f5a425;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      }
+      .award-item h5 {
+        color: #f5a425;
+        font-size: 17px;
+        margin-bottom: 8px;
+        font-weight: 700;
+      }
+      .award-org {
+        color: #fff;
+        font-size: 15px;
+        margin-bottom: 6px;
+        font-weight: 500;
+      }
+      .award-year {
+        color: #999;
+        font-size: 13px;
+        margin-bottom: 10px;
+        font-weight: 500;
+      }
+    </style>
+    <!-- Skills Section Improvement -->
+    <link rel="stylesheet" href="assets/css/skills-improvement.css">
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img id="sidebar-profile-image" src="assets/images/author-image.jpg" alt="Profile" /></a>
+            </div>
+            <div class="author-content">
+              <h4 id="sidebar-name">Loading...</h4>
+              <span id="sidebar-title">Loading...</span>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="#section1">About</a></li>
+                <li><a href="#section2">Education</a></li>
+                <li><a href="#section3">Experience</a></li>
+                <li><a href="#section4">Research</a></li>
+                <li><a href="#section5">Publications</a></li>
+                <li><a href="#section6">Awards</a></li>
+                <li><a href="#section7">Contact</a></li>
+              </ul>
+            </nav>
+            <div class="social-network">
+              <ul class="soial-icons" id="social-links">
+                <!-- Social links will be populated by JavaScript -->
+              </ul>
+            </div>
+            <div class="copyright-text">
+              <p id="copyright-text">Copyright 2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <section class="section about-me" data-section="section1">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="about-title">About Me</h2>
+            <div class="line-dec"></div>
+          </div>
+          
+          <div class="about-summary" id="about-summary-box">
+            <!-- Summary will be populated by JavaScript -->
+          </div>
+          
+          <div id="about-sections">
+            <!-- About sections will be populated by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section class="section my-services" data-section="section2">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="education-title">Education</h2>
+            <div class="line-dec"></div>
+            <span id="education-description"></span>
+          </div>
+          <div id="education-content">
+            <!-- Education will be populated by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section class="section about-me" data-section="section3">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="experience-title">Work Experience</h2>
+            <div class="line-dec"></div>
+            <span id="experience-description"></span>
+          </div>
+          <div id="experience-content">
+            <!-- Experience will be populated by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Research Expertise Section -->
+      <section class="section my-services" data-section="section4">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="expertise-title">Research Expertise</h2>
+            <div class="line-dec"></div>
+            <span id="expertise-description"></span>
+          </div>
+          <div class="row" id="expertise-areas">
+            <!-- Expertise areas will be populated by JavaScript -->
+          </div>
+          
+          <!-- Technical Skills -->
+          <div style="margin-top: 60px;">
+            <div class="section-heading">
+              <h2 id="skills-title">Technical Skills</h2>
+              <div class="line-dec"></div>
+              <span id="skills-description"></span>
+            </div>
+            <div id="skills-content">
+              <!-- Skills will be populated by JavaScript -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Publications Section -->
+      <section class="section about-me" data-section="section5">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="publications-title">Publications</h2>
+            <div class="line-dec"></div>
+            <span id="publications-description"></span>
+          </div>
+          
+          <!-- Journal Papers -->
+          <div style="margin-bottom: 60px;">
+            <h3 style="color: #f5a425; margin-bottom: 30px; font-size: 26px; font-weight: 700;">Journal Papers</h3>
+            <div id="journal-papers">
+              <!-- Journal papers will be populated by JavaScript -->
+            </div>
+          </div>
+          
+          <!-- Conference Papers -->
+          <div>
+            <h3 style="color: #f5a425; margin-bottom: 30px; font-size: 26px; font-weight: 700;">Conference Papers</h3>
+            <div id="conference-papers">
+              <!-- Conference papers will be populated by JavaScript -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Awards Section -->
+      <section class="section my-services" data-section="section6">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="awards-title">Awards & Honors</h2>
+            <div class="line-dec"></div>
+            <span id="awards-description"></span>
+          </div>
+          <div id="awards-content">
+            <!-- Awards will be populated by JavaScript -->
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- Certifications & Training Section -->
+      <section class="section my-services" data-section="section7">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="certifications-title">Certifications & Training</h2>
+            <div class="line-dec"></div>
+            <span id="certifications-description"></span>
+          </div>
+          <div class="row" id="certifications-content">
+            <!-- Certifications will be populated by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section contact-me" data-section="section8">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="contact-title">Get In Touch</h2>
+            <div class="line-dec"></div>
+            <span id="contact-description"></span>
+          </div>
+          <div class="row">
+            <div class="right-content">
+              <div class="container">
+                <!-- Formspree Form - Configured and Ready! -->
+                <form id="contact" action="https://formspree.io/f/xqennvkw" method="POST">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input
+                          name="name"
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Your name..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input
+                          name="email"
+                          type="email"
+                          class="form-control"
+                          id="email-input"
+                          placeholder="Your email..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <input
+                          name="_subject"
+                          type="text"
+                          class="form-control"
+                          id="subject"
+                          placeholder="Subject..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <textarea
+                          name="message"
+                          rows="6"
+                          class="form-control"
+                          id="message"
+                          placeholder="Your message..."
+                          required=""
+                        ></textarea>
+                      </fieldset>
+                    </div>
+                    <!-- Formspree configuration -->
+                    <input type="hidden" name="_next" value="https://imamulferdous.github.io/imamulferdous/#section7" />
+                    <input type="hidden" name="_captcha" value="false" />
+                    <div class="col-md-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="button">
+                          Send Message
+                        </button>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <div style="margin-top: 20px; padding: 25px; background: linear-gradient(135deg, #1a1c20 0%, #23252a 100%); border-radius: 8px; border: 2px solid #f5a425;">
+                        <p style="margin: 0; color: #f5a425; font-weight: 700; font-size: 18px; margin-bottom: 15px;">Contact Information:</p>
+                        <p style="margin: 12px 0; color: #ddd; font-size: 15px;"><i class="fa fa-envelope" style="color: #f5a425; margin-right: 12px; width: 20px;"></i> <span id="contact-email"></span></p>
+                        <p style="margin: 12px 0; color: #ddd; font-size: 15px;"><i class="fa fa-phone" style="color: #f5a425; margin-right: 12px; width: 20px;"></i> <span id="contact-phone"></span></p>
+                        <p style="margin: 12px 0; color: #ddd; font-size: 15px;"><i class="fa fa-map-marker" style="color: #f5a425; margin-right: 12px; width: 20px;"></i> <span id="contact-location"></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    
+    <!-- Load website data -->
+    <script src="data.js"></script>
+    
+    <!-- Populate content from data.js -->
+    <script src="assets/js/populate-content.js"></script>
+    
+    <script>
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate({ scrollTop: reqSectionPos }, 800);
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink.closest("li").addClass("active").siblings().removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+/* Better Skills Section Styling */
+
+.skill-category {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  border-left: 3px solid #f5a425;
+}
+
+.skill-category h5 {
+  color: #f5a425;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: rgba(245, 164, 37, 0.15);
+  border: 1px solid rgba(245, 164, 37, 0.3);
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background-color: rgba(245, 164, 37, 0.25);
+  border-color: rgba(245, 164, 37, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Ensure skills section has proper spacing */
+#skills-content {
+  padding: 20px 0;
+}
