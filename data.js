@@ -139,25 +139,25 @@ const websiteData = {
         icon: "fa-flask",
         title: "Small Punch Creep Testing",
         description: "Extensive expertise in SPCT methodology for characterizing high-temperature creep behavior of Grade 91 steel. Proficient in sample preparation, test execution, data acquisition, and interpretation of creep curves. Experienced in correlating SPCT results with conventional uniaxial creep testing for material life prediction.",
-        highlights: ["Experimental Design", "Data Analysis", "Life Prediction", "Material Characterization"]
+        
       },
       {
         icon: "fa-cube",
         title: "Finite Element Analysis",
         description: "Advanced computational modeling using ABAQUS for simulating creep deformation and damage evolution in high-temperature materials. Specialized in implementing user-defined subroutines (UMAT/CREEP) for complex material behavior, mesh optimization, and validation against experimental results.",
-        highlights: 
+        
       },
       {
         icon: "fa-brain",
         title: "Machine Learning & Artificial Intelligence",
         description: "Application of neural networks and machine learning algorithms for predicting creep rupture life and material behavior. Proficient in Python-based ML frameworks including TensorFlow and scikit-learn. Experienced in data preprocessing, feature engineering, model optimization, and validation for materials science applications.",
-        highlights: ["Neural Networks", "Python/TensorFlow", "Data-Driven Modeling", "Predictive Analytics"]
+        
       },
       {
         icon: "fa-drafting-compass",
         title: "CAD Design & Engineering",
         description: "Certified SolidWorks Professional (CSWP/CSWA) with expertise in parametric modeling, assembly design, and engineering drawings. Proficient in AutoCAD for 2D technical documentation. Experience in designing experimental fixtures, test equipment, and mechanical components for research and industrial applications.",
-        highlights: ["SolidWorks (CSWP/CSWA)", "AutoCAD", "Product Design", "Technical Documentation"]
+        
       }
     ]
   },
